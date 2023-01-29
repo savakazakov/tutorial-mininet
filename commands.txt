@@ -1,4 +1,4 @@
-sudo docker build --rm -t topology:latest --build-arg topology=tutorialTopology -f Dockerfile .
+sudo docker build --rm -t topology:latest --build-arg topology=tutorialTopology -f Dockerfile_Orig .
 sudo docker run --rm -it --privileged --network host --name topology topology:latest -v info
 
 sudo docker build --rm -t topology:latest .
